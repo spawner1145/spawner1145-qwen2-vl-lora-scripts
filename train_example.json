@@ -1,0 +1,26 @@
+[
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "value": "<|vision_start|>path/to/screen_image_1.png<|vision_end|> What should I do next?"
+      },
+      {
+        "role": "assistant",
+        "value": "Click the 'Start' button."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "role": "user",
+        "value": "<|vision_start|>path/to/screen_image_2.png<|vision_end|> How can I proceed from here?"
+      },
+      {
+        "role": "assistant",
+        "value": "Enter your password and press 'Login'."
+      }
+    ]
+  }
+]
