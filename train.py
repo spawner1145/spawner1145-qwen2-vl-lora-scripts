@@ -144,7 +144,9 @@ if mode == 'train':
         logging_first_step=5,
         num_train_epochs=2,
         save_steps=100,
-        learning_rate=1e-4,
+        learning_rate=1e-4,  # 初始学习率
+        lr_scheduler_type="linear",  # 使用线性学习率调度器，可根据需要更改为其他类型，例如："linear", "cosine", "constant"等。
+        warmup_steps=500,  # 预热步骤数量，根据你的数据集大小和训练计划进行调整
         save_on_each_node=True,
         gradient_checkpointing=True,
         report_to="none",
